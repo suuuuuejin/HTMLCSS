@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 4000px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .red-box{
+            background-color: red;
+        }
+        .green-box{
+            background-color: green;
+            /*좌표위치에 따라 배치*/
+            position: absolute; /*브라우저의 왼쪽위가 기준점*/
+            /*left: 100px;  왼쪽에서 100px 떨어짐*/
+            /*top: 100px;  위에서 100px 떨어짐*/
+            
+        }
+        .blue-box{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div> <!--두가지 css를 만들겠다-->
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

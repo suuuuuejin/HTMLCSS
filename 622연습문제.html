@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>주문서</h1>
+    <form action="전달할 url" method="post">
+    <table class="tg">
+        <thead>
+          <tr>
+            <td class="tg-0lax">고객명 :</td>
+            <td class="tg-0lax"><input type="text" id="memName" name="memName" maxlength="10" placeholder="이름을 입력하세요">
+                <br></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0lax">전화번호 :</td>
+            <td class="tg-0lax"><input type="text" id="memNumber" name="memNumber" maxlength="10" placeholder="전화번호를 입력하세요">
+                <br></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">E-mail :</td>
+            <td class="tg-0lax"><input type="text" id="memMail" name="memMail" maxlength="10" placeholder="메일을 입력하세요">
+                <br></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax" colspan="2">
+                <fieldset style="width: 400px; height: 100px;">
+                <legend>피자 사이즈</legend>
+                <input type="radio" name="memPsize" checked>Small <br>
+                <input type="radio" name="memPsize">Medium <br>
+                <input type="radio" name="memPsize">Large <br>
+            </fieldset>
+        <br>
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax" colspan="2">
+                <fieldset style="width: 400px; height: 100px;">
+                <legend>토핑 선택</legend>
+                <input type="checkbox" name="memChoice" value="베이컨">베이컨 <br>
+                <input type="checkbox" name="memChoice" value="치즈">치즈<br>
+                <input type="checkbox" name="memChoice" value="양파">양파<br>
+                <input type="checkbox" name="memChoice" value="버섯">버섯<br>
+            </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">희망배송시간 :</td>
+            <td class="tg-0lax">
+                <input type="time" min="09:00" max="20:00">
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">배송시 요청사항 :</td>
+            <td class="tg-0lax">
+                <textarea rows="10px" cols="50px" name="memContents"></textarea>
+            </td>
+          </tr>
+          
+        </tbody>
+        
+        </table>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시선택하기">
+    </form>
+</body>
+</html>

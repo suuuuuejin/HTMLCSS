@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 5000px;
+        }
+        .container{
+            background-color: #ccc;
+            width: 100%;
+            padding:10px;
+            margin: 150px;
+            position:relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .red{
+            background-color: red;
+            position: absolute; /*공중에 붕 떠있는 상태*/
+            z-index: 10;/* 모든 요소의 z-index는 0이다. --숫자 높을수록 우선순위가 올라가서 위로 올라온다*/
+        }
+        .green{
+            background-color:green;
+            position: absolute; /* 부모와 다른 포지션 지정해야함*/
+            left: 0px;
+            top: 0px;
+            
+
+        }
+        .blue{
+            background-color:blue;
+            position: absolute;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+</html>
